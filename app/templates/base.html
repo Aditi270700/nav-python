@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+   
+    <div class="nav">
+        <ul>
+       <li><a href='{% url "home"%}'>Home</a></li>
+        <a href='{% url "about"%}'><li>About</li></a>
+        <a href='{% url "contact"%}'><li>Contact</li></a>
+        <a href='{% url "service"%}'><li>Service</li></a>
+        </ul>
+    </div>
+     {% block content %}
+     
+    {% endblock %}
 </body>
 </html>
