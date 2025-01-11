@@ -16,8 +16,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 print(BASE_DIR)
 
-TEMPLATEDIRS = os.path.join(BASE_DIR,'template')
-print(TEMPLATEDIRS)
+ADITIDIRS = os.path.join(BASE_DIR,'aditi')
+print(ADITIDIRS)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATEDIRS],
+        'DIRS': [ADITIDIRS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
